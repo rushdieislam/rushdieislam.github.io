@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Untitled Document</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <style type="text/css">
+    BODY {
+      FONT-SIZE: 15pt; COLOR: #000000; FONT-FAMILY: "Roboto", serif; background-color: #8c1515;
+    }
+    TABLE {
+      FONT-SIZE: 15pt; COLOR: #000000; FONT-FAMILY: "Roboto", serif
+    }
+    A.menuclass {
+      COLOR: #fffff; TEXT-DECORATION: none
+    }
+    A.menuclass:visited {
+      COLOR: #fffff
+    }
+    A.dblue {
+      COLOR: #333366; TEXT-DECORATION: none
+    }
+    A.dblue:visited {
+      COLOR: #333366
+    }
+    A.dwhite {
+      COLOR: #ffffff; TEXT-DECORATION: none; /* Changed text color to white */
+    }
+    A.dwhite:visited {
+      COLOR: #ffffff; /* Changed visited link color to white */
+    }
+    section {
+      display: flex;
+      background-color: #8c1515; /* Background color matching text color */
+      /* border-radius: 8px; */
+      /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+      color: #ffffff; /* Text color set to white */
+      height: 30px;
+      align-items: left;
+      justify-content: left;
+    }
+    newsection {
+      display: flex;
+      background-color: #8c1515; /* Background color matching text color */
+      /* border-radius: 8px; */
+      /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+      color: #ffffff; /* Text color set to white */
+      height: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+    select.team-dropdown {
+      background-color: #8c1515;
+      color: #ffffff;
+      font-size: 15pt;
+      font-family: "Roboto", serif;
+      border: none;
+      margin: 0;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body bgcolor=#8c1515 leftmargin="1">
+
+<table cellspacing="0" cellpadding="0" width="100%" bgcolor=#8c1515 border="0">
+  <tbody>
+    <tr>
+      <td valign="top" nowrap bgcolor=#8c1515>
+
+        <table cellpadding="2" cellspacing="12" width="100%" align="center"><!-- Menu start editable -->
+          <tr>
+            <td width="50%">
+              <section id="labTitleSection">
+                <a class="dwhite"> CoMPAS Lab @ IITD</a>
+              </section>
+            </td>
+            <td>
+              <newsection id="homeSection">
+                <a class="dwhite" href="home_v3.html" target="home" onclick="changeBackgroundColor('homeSection')"> Home</a>
+              </newsection>
+            </td>
+            <td>
+              <newsection id="researchSection">
+                <a class="dwhite" href="research_v3.html" target="home" onclick="changeBackgroundColor('researchSection')"> Research</a>
+              </newsection>
+            </td>
+
+            <td>
+              <newsection id="teamSection">
+                <select class="team-dropdown" onchange="navigateToPage(this)">
+                  <option value="" selected disabled>Team</option>
+                  <option value="current_v3.html">Current</option>
+                  <option value="alumni_v3.html">Alumni</option>
+                </select>
+              </newsection>
+            </td>
+
+            <td>
+              <newsection id="publicationSection">
+                <a class="dwhite" href="publications_v3.html" target="home" onclick="changeBackgroundColor('publicationSection')"> Publications</a>
+              </newsection>
+            </td>
+            <td>
+              <newsection id="coursesSection">
+                <a class="dwhite" href="courses_v3.html" target="home" onclick="changeBackgroundColor('coursesSection')"> Teaching</a>
+              </newsection>
+            </td>
+            <td>
+              <newsection id="opportunitiesSection">
+                <a class="dwhite" href="opportunities_v3.html" target="home" onclick="changeBackgroundColor('opportunitiesSection')"> Join Us</a>
+              </newsection>
+            </td>
+          </tr>
+        </table><!-- menu editable end -->
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+  function changeBackgroundColor(sectionId) {
+    var sections = document.querySelectorAll('section');
+    sections.forEach(function(section) {
+      if (section.id === sectionId) {
+        // section.classList.add('highlight');
+      } else {
+        // section.classList.remove('highlight');
+      }
+    });
+  }
+
+  function navigateToPage(selectElement) {
+    var url = selectElement.value;
+    selectElement.selectedIndex = 0; // Reset to "Team"
+    if (url) {
+      window.open(url, 'home');
+    }
+  }
+</script>
+
+</body>
+</html>
