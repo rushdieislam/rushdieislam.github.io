@@ -41,7 +41,7 @@
 	<TABLE cellpadding=2 cellspacing=2 width=98% align=center border=0>
 	
 	<!---heading------>
-	<TR><TD valign=top><P><font size=16 color= #8c1515><b>AML702 Applied Computational Methods</b></font></TD></TR>
+	<TR><TD valign=top><P><font size=16 color= #8c1515><b>APL108 Mechanics of Solids </b></font></TD></TR>
 	<!---heading end------------------------>
 	
 	<TR><TD valign=top><hr size=-1 color= #8c1515></font></TD></TR>
@@ -49,7 +49,7 @@
 	<TR><TD valign=top><!--contents area---------------->
 
 	<h1>Course info</h1>
-	<b>Credit:</b> 3 Units (3-0-2).
+	<b>Credit:</b> 3 Units (3-1-2).
 	<br><br>
 	<b>Instructor:</b> Dr. Md Rushdie Ibne Islam, 
 	Email: rushdie@am.iitd.ac.in, Office: 4B-19 (Block IV, top floor).
@@ -57,65 +57,87 @@
 	<b>Class timings:</b>
 	<ul>
 		<li>
-			Lecture: Tuesday, Thursday, Friday; 11 AM – 11:50 AM;  <b>LT-IV</b> 
+			Lecture: Tuesday, Thursday and Friday; 11 AM – 11:50 AM;  <b>LH 410</b> 
+		</li>
+
+		<li>
+			Tutorial: Monday, and Wednesday; 1 PM – 2 PM;  <b>LH 410</b> 
 		</li>
 
                 <li>
-                        Practical: Monday; 3 PM - 5 PM; <b>Optimization Lab</b> 
+                        Practical: Monday, Tuesday, Thursday and Friday; 2.30 PM - 5 PM; <b>SOM Lab</b> 
                 </li>
 	</ul> 
 	<!-- <br><br> -->
-	<b>TAs:</b> Naveen and Saurabh Singh.
+	<b>TAs:</b> Tushar, Saurabh Singh, Prakalp, Navneeth, Aquib, Chandrakesh, Harshwardhan Soni, Aswathy, Jerome, Subhanu, Bholender Singh, Vishabjeet, 
+                    Neha, Digesh, Ishwar and Harshul Malik.
 	<br><br>
 	<b>Office hours:</b> Either stop by instructor's office (for quick discussion) or take an email appointment (for longer discussion).
 	<br><br>
-	<b>Important note:</b> Please include <b>APL702</b> 
+	<b>Important note:</b> Please include <b>APL108</b> 
 	(without space) in the subject line for all email communications 
 	related to this course.
 
 	<h1>Syllabus</h1>
 <ul>
-	<li><b>Part I: Introduction and Fundamentals</b></li>
+	<li><b>Part I: Fundamentals of Stress and Strain</b></li>
 	<ul>
-		<li>Course plan and introduction to computational methods.</li>
-		<li>MATLAB fundamentals and programming with MATLAB.</li>
-		<li>Round-off and truncation errors.</li>
+		<li>Introduction and mathematical preliminaries.</li>
+		<li>Analysis of stress:
+			<ul>
+				<li>Traction vector.</li>
+				<li>Types of stress.</li>
+				<li>Stress tensor.</li>
+			</ul>
+		</li>
+		<li>Linear and angular momentum balance; equilibrium equations.</li>
+		<li>Principal stresses and Mohr's circle.</li>
 	</ul>
 
-	<li><b>Part II: Numerical Methods for Algebra and Calculus</b></li>
+	<li><b>Part II: Strain and Constitutive Relations</b></li>
 	<ul>
-		<li>Finding roots of functions.</li>
-		<li>Numerical solution of linear algebraic equations:
+		<li>Analysis of strain:
 			<ul>
-				<li>Gauss elimination.</li>
-				<li>LU and Cholesky factorization.</li>
-				<li>Iterative methods.</li>
+				<li>Types of strain.</li>
+				<li>Strain tensor.</li>
+				<li>Rotation tensor.</li>
+				<li>Compatibility conditions.</li>
 			</ul>
 		</li>
-		<li>Numerical solution of non-linear equations.</li>
-		<li>Eigenvalue problems.</li>
-		<li>Numerical integration:
-			<ul>
-				<li>Newton-Cotes formulas.</li>
-				<li>The trapezoidal rule.</li>
-				<li>Simpson’s rule.</li>
-			</ul>
-		</li>
-		<li>Numerical differentiation using the finite difference method.</li>
+		<li>Stress-strain relations (Hooke's Law).</li>
+		<li>Elastic constants.</li>
+		<li>Failure theories.</li>
+		<li>Stress, strain, and equilibrium equations in cylindrical coordinates.</li>
 	</ul>
 
-	<li><b>Part III: Differential Equations and Applications</b></li>
+	<li><b>Part III: Applications in Solid Mechanics</b></li>
 	<ul>
-		<li>Solution of ordinary differential equations:
+		<li>Energy methods in elasticity.</li>
+		<li>Bending of beams:
 			<ul>
-				<li>Initial value problems.</li>
-				<li>Boundary value problems.</li>
+				<li>Symmetrical beams.</li>
+				<li>Unsymmetrical beams.</li>
+				<li>Shear centre.</li>
 			</ul>
 		</li>
-		<li>Solution of partial differential equations (brief overview).</li>
-		<li>Control volume method (brief overview).</li>
+		<li>Torsion of shafts and bars.</li>
+		<li>Buckling of columns.</li>
+		<li>Additional topics (depending on time).</li>
 	</ul>
 </ul>
+
+<h1>List of Experiments</h1>
+<ul>
+	<li>S1: Hardness Testing (Brinell & Rockwell)</li>
+	<li>S2: Strain Gauge (Tensile & Bending)</li>
+	<li>S3: Uniaxial Tension</li>
+	<li>S4: Uniaxial Compression</li>
+	<li>S5: Torsion</li>
+	<li>S6: Impact (Izod)</li>
+	<li>S7: Impact (Charpy)</li>
+	<li>S8: Buckling</li>
+</ul>
+
 
 
 
@@ -123,22 +145,23 @@
 	<ul>
 		<li><b>Primary</b></li>
 		<ul>
-			<li>Chapra, S.C. Applied Numerical Methods with MATLAB for Engineers and Scientists.</li>
-			<li>Moin, P. Fundamentals of Engineering Numerical Analysis.</li>
+			<li>Srinath, L.S. Advanced Mechanics of Solids.</li>
 		</ul>
 		
 		<li><b>Additional</b></li>
 		<ul>
-			<li>Dahlquist, G. and Bjorck, A. Numerical Methods.</li>
+			<li>Crandall, S.H., Dahl, N.C., Lardner, T.J. and Sivakumar, M.S. An Introduction to Mechanics of Solids.</li>
+                        <li>Sadd, M. Elasticity: Theory, Applications and Numerics. </li>
+                        <li>Kumar A. Solid Mechanics for Undergraduates</li>
 		</ul>
 	</ul>
 
 	<h1>Grading</h1>
 	<ul>
-		<li>Quiz: 15% (5% x 3)</li>
-		<li>Minor: 20%</li>
-		<li>Major: 30%</li>
-		<li>Programming assignments: 35% (5% x Top 7)</li>
+		<li>Quiz: 20% (10% x 2)</li>
+		<li>Minor: 25%</li>
+		<li>Major: 35%</li>
+		<li>Practical: 20%</li>
 	</ul>
 	If a student decides to audit the course, the passing grade will be 40%.
 	Additionally, the student must write minor and major exams, and the attendance 
@@ -147,7 +170,7 @@
 	<h1>Quizzes, minor and major</h1>
 	<ul>
 		<li>
-			Three quizzes will be conducted; one (quiz #1) before and other two (quiz #2) after the minor exam.
+			Two quizzes will be conducted; one (quiz #1) before and another (quiz #2) after the minor exam.
 			Exact date, time and place will be notified later.
 		</li>
 		<li>
@@ -162,7 +185,11 @@
 			Hence, submission is not necessary.
 		</li>
 		<li>
-			Students are strongly encouraged to try the homework problems.
+			A subset of problems from homework will be discussed/solved during tutorial sessions and solutions of the remaining problems will be provided.
+		</li>
+
+		<li>
+			Students are strongly encouraged to try the homework problems before coming to the tutorial sessions.
 		</li>
 	</ul>
 
