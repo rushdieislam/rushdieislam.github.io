@@ -31,8 +31,6 @@
       align-items: center;
       text-align: center;
       justify-content: center;
-      width: 100%;
-      box-sizing: border-box;
     }
 
     .navbar {
@@ -86,7 +84,9 @@
 
     footer {
   background-color: #f1f1f1;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
   font-size: 0.9rem;
   border-top: 1px solid #ccc;
   position: fixed;
@@ -94,40 +94,6 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.footer-content > div {
-  margin: 0.5rem 0;
-}
-
-.footer-logo img {
-  max-height: 60px;
-  height: auto;
-  width: auto;
-}
-
-@media (min-width: 768px) {
-  .footer-content {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
-
-  .footer-content > div {
-    flex: 1;
-    margin: 0 1rem;
-  }
-
-  .footer-content .footer-logo {
-    text-align: center;
-  }
 }
 
   </style>
@@ -157,7 +123,7 @@
   </nav>
 
   <!-- Main Section -->
-  <main class="container">
+  <main>
     <div class="titletext">
       Welcome to Dr. Md Rushdie Ibne Islam's research group at BITS Pilani!
     </div>
@@ -171,8 +137,8 @@
     <a href="opportunities.html" class="button">Join Us</a>
   </main>
 
+  <!-- Footer -->
   <footer>
-  <div class="footer-content">
     <div>
       <strong>Office:</strong><br />
       Room No. 1212-A, FD-I <br />
@@ -181,8 +147,8 @@
       Pilani, Rajasthan 333031, India
     </div>
 
-    <div class="footer-logo">
-      <img src="pics/BITS_Pilani-Logo.png" alt="BITS Pilani Logo" />
+    <div class="col-md-4 mb-2 mb-md-0 text-center">
+      <img src="pics/BITS_Pilani-Logo.png" alt="BITS Pilani Logo" style="height: 90px;" />
     </div>
 
     <div>
@@ -190,8 +156,7 @@
       Email: rushdie.islam@pilani.bits-pilani.ac.in<br />
       Phone: +91-1596-255872
     </div>
-  </div>
-</footer>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
