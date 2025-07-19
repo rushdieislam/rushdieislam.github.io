@@ -1,2 +1,0 @@
-# rushdieislam.github.io
-Webpage

@@ -1,203 +1,264 @@
-<HTML><HEAD><TITLE>APL203</TITLE>
-	<STYLE type=text/css>BODY {
-		FONT-SIZE: 14pt; COLOR: #000000; FONT-FAMILY: "Roboto", serif;
-	}
-	TABLE {
-		FONT-SIZE: 14pt; COLOR: #000000; FONT-FAMILY: "Roboto", serif;
-	}
-	A.menuclass {
-		COLOR: #fffff; TEXT-DECORATION: none
-	}
-	A.menuclass:visited {
-		COLOR: #fffff
-	}
-	A.menuclass:hover {
-		COLOR: #ff6600; BACKGROUND-COLOR: #CCCC99
-	}
-	A.dblue {
-		COLOR: #333366; TEXT-DECORATION: none
-	}
-	A.dblue:visited {
-		COLOR: #333366
-	}
-	A.dblue:hover {
-		COLOR: #ffffff; BACKGROUND-COLOR: #CCCC99
-	}
-	A.dwhite {
-		COLOR: #ffffff; TEXT-DECORATION: none
-	}
-	A.dwhite:visited {
-		COLOR: #ffffff
-	}
-	A.dwhite:hover {
-		COLOR: #ffffff; BACKGROUND-COLOR: #CCCC99
-	}
-	.tab { margin-left: 40px; }
-	</STYLE>
-	
-	</HEAD>
-	<BODY vLink=#ff0000 aLink=#000000 link=#ff0000 bgColor=#ffffff >
-	
-	<TABLE cellpadding=2 cellspacing=2 width=98% align=center border=0>
-	
-	<!---heading------>
-	<TR><TD valign=top><P><font size=16 color= #8c1515><b>AML702 Applied Computational Methods</b></font></TD></TR>
-	<!---heading end------------------------>
-	
-	<TR><TD valign=top><hr size=-1 color= #8c1515></font></TD></TR>
-	
-	<TR><TD valign=top><!--contents area---------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teaching | Dr. Md Rushdie Ibne Islam</title>
+  <!-- Roboto Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14pt;
+    color: #000000;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
-	<h1>Course info</h1>
-	<b>Credit:</b> 3 Units (3-0-2).
-	<br><br>
-	<b>Instructor:</b> Dr. Md Rushdie Ibne Islam, 
-	Email: rushdie@am.iitd.ac.in, Office: 4B-19 (Block IV, top floor).
-	<br><br>
-	<b>Class timings:</b>
-	<ul>
-		<li>
-			Lecture: Tuesday, Thursday, Friday; 11 AM – 11:50 AM;  <b>LT-IV</b> 
-		</li>
+    main {
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      padding-top: 100px;   /* add space for fixed navbar */
+      padding-bottom: 120px;
+      flex-direction: column;
+      align-items: left;
+      text-align: left;
+      justify-content: left;
+    }
 
-                <li>
-                        Practical: Monday; 3 PM - 5 PM; <b>Optimization Lab</b> 
-                </li>
-	</ul> 
-	<!-- <br><br> -->
-	<b>TAs:</b> Naveen and Saurabh Singh.
-	<br><br>
-	<b>Office hours:</b> Either stop by instructor's office (for quick discussion) or take an email appointment (for longer discussion).
-	<br><br>
-	<b>Important note:</b> Please include <b>APL702</b> 
-	(without space) in the subject line for all email communications 
-	related to this course.
 
-	<h1>Syllabus</h1>
+    .navbar {
+  background-color: #800000 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+      color: #ffffff !important;
+    }
+
+    .navbar .nav-link:hover {
+      background-color: #a52a2a !important;
+      color: #fff !important;
+    }
+
+   .titletext {
+      color: #8c1515;
+      font-size: 40pt;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .specialtext {
+      color: #8c1515;
+      font-size: 20pt;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 12pt;
+      color: #ffffff;
+      background-color: #8c1515;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 10px;
+    }
+
+    .button:hover {
+      background-color: #6e0f0f;
+    }
+
+  footer {
+  background-color: #f1f1f1;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+  </style>
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Dr. Md Rushdie Ibne Islam</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="biosketch.html">Bio-Sketch</a></li>
+          <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="teaching.html">Teaching</a></li>
+          <li class="nav-item"><a class="nav-link" href="students.html">Group Members</a></li>
+          <li class="nav-item"><a class="nav-link" href="opportunities.html">Opportunities</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<main class="container">
+  <div style="padding-top: 20px;">
+    <p><font size="12" color="#8c1515"><b>AML702 Applied Computational Methods</b></font></p>
+    <hr style="height: 2px; background-color: #8c1515; border: none;">
+
+<h1><b>Course info</b></h1>
+<br>
+<b>Credit:</b> 3 Units (3-0-2).<br><br>
+<b>Instructor:</b> Dr. Md Rushdie Ibne Islam, Email: rushdie@am.iitd.ac.in, Office: 4B-19 (Block IV, top floor).<br><br>
+<b>Class timings:</b>
 <ul>
-	<li><b>Part I: Introduction and Fundamentals</b></li>
-	<ul>
-		<li>Course plan and introduction to computational methods.</li>
-		<li>MATLAB fundamentals and programming with MATLAB.</li>
-		<li>Round-off and truncation errors.</li>
-	</ul>
+  <li>Lecture: Tuesday, Thursday, Friday; 11 AM – 11:50 AM; <b>LT-IV</b></li>
+  <li>Practical: Monday; 3 PM - 5 PM; <b>Optimization Lab</b></li>
+</ul>
+<b>TAs:</b> Naveen and Saurabh Singh.<br><br>
+<b>Office hours:</b> Either stop by instructor's office (for quick discussion) or take an email appointment (for longer discussion).<br><br>
+<b>Important note:</b> Please include <b>APL702</b> (without space) in the subject line for all email communications related to this course.
+<br><br>
 
-	<li><b>Part II: Numerical Methods for Algebra and Calculus</b></li>
-	<ul>
-		<li>Finding roots of functions.</li>
-		<li>Numerical solution of linear algebraic equations:
-			<ul>
-				<li>Gauss elimination.</li>
-				<li>LU and Cholesky factorization.</li>
-				<li>Iterative methods.</li>
-			</ul>
-		</li>
-		<li>Numerical solution of non-linear equations.</li>
-		<li>Eigenvalue problems.</li>
-		<li>Numerical integration:
-			<ul>
-				<li>Newton-Cotes formulas.</li>
-				<li>The trapezoidal rule.</li>
-				<li>Simpson’s rule.</li>
-			</ul>
-		</li>
-		<li>Numerical differentiation using the finite difference method.</li>
-	</ul>
+<h1><b>Syllabus</b></h1>
+<ul>
+  <li><b>Part I: Introduction and Fundamentals</b>
+    <ul>
+      <li>Course plan and introduction to computational methods.</li>
+      <li>MATLAB fundamentals and programming with MATLAB.</li>
+      <li>Round-off and truncation errors.</li>
+    </ul>
+  </li>
 
-	<li><b>Part III: Differential Equations and Applications</b></li>
-	<ul>
-		<li>Solution of ordinary differential equations:
-			<ul>
-				<li>Initial value problems.</li>
-				<li>Boundary value problems.</li>
-			</ul>
-		</li>
-		<li>Solution of partial differential equations (brief overview).</li>
-		<li>Control volume method (brief overview).</li>
-	</ul>
+  <li><b>Part II: Numerical Methods for Algebra and Calculus</b>
+    <ul>
+      <li>Finding roots of functions.</li>
+      <li>Numerical solution of linear algebraic equations:
+        <ul>
+          <li>Gauss elimination.</li>
+          <li>LU and Cholesky factorization.</li>
+          <li>Iterative methods.</li>
+        </ul>
+      </li>
+      <li>Numerical solution of non-linear equations.</li>
+      <li>Eigenvalue problems.</li>
+      <li>Numerical integration:
+        <ul>
+          <li>Newton-Cotes formulas.</li>
+          <li>The trapezoidal rule.</li>
+          <li>Simpson’s rule.</li>
+        </ul>
+      </li>
+      <li>Numerical differentiation using the finite difference method.</li>
+    </ul>
+  </li>
+
+  <li><b>Part III: Differential Equations and Applications</b>
+    <ul>
+      <li>Solution of ordinary differential equations:
+        <ul>
+          <li>Initial value problems.</li>
+          <li>Boundary value problems.</li>
+        </ul>
+      </li>
+      <li>Solution of partial differential equations (brief overview).</li>
+      <li>Control volume method (brief overview).</li>
+    </ul>
+  </li>
 </ul>
 
+<br>
+<h1><b>References</b></h1>
+<ul>
+  <li><b>Primary</b>
+    <ul>
+      <li>Chapra, S.C. Applied Numerical Methods with MATLAB for Engineers and Scientists.</li>
+      <li>Moin, P. Fundamentals of Engineering Numerical Analysis.</li>
+    </ul>
+  </li>
+  <li><b>Additional</b>
+    <ul>
+      <li>Dahlquist, G. and Bjorck, A. Numerical Methods.</li>
+    </ul>
+  </li>
+</ul>
+
+<br>
+<h1><b>Grading</b></h1>
+<ul>
+  <li>Quiz: 15% (5% x 3)</li>
+  <li>Minor: 20%</li>
+  <li>Major: 30%</li>
+  <li>Programming assignments: 35% (5% x Top 7)</li>
+</ul>
+If a student decides to audit the course, the passing grade will be 40%. Additionally, the student must write minor and major exams, and the attendance must be greater than or equal to 75% in lectures and tutorials separately.
+<br><br>
+
+<h1><b>Quizzes, minor and major</b></h1>
+<ul>
+  <li>Three quizzes will be conducted; one (quiz #1) before and other two (quiz #2) after the minor exam. Exact date, time and place will be notified later.</li>
+  <li>Minor and major exams will be scheduled based on the institute timetable.</li>
+</ul>
+<br>
+
+<h1><b>Homework</b></h1>
+<ul>
+  <li>Homework will be assigned almost every week. These will not be graded. Hence, submission is not necessary.</li>
+  <li>Students are strongly encouraged to try the homework problems.</li>
+</ul>
+<br>
+
+<h1><b>Attendance</b></h1>
+<ul>
+  <li>Students are strongly encouraged to attend all the lectures sessions. Attendance will be recorded for each lecture session. If a student's attendance is less than 75%, the student will be awarded one grade less than the actual grade that he/she has earned. For example, a student who has got an A grade but has attendance less than 75% will be awarded an A (-) grade. However, please note that there are no marks for attendance.</li>
+  <li>In case of absence due to unforeseen circumstances, such as medical reasons, the student must inform the instructor via email within a week from the date of absence.</li>
+  <li>If a student cannot appear for an exam due to medical reasons, a medical certificate needs to be produced from IIT Delhi hospital for consideration of time extension or re-exam.</li>
+</ul>
+<br><br>
+
+  </div>
+</main>
 
 
-	<h1>References</h1>
-	<ul>
-		<li><b>Primary</b></li>
-		<ul>
-			<li>Chapra, S.C. Applied Numerical Methods with MATLAB for Engineers and Scientists.</li>
-			<li>Moin, P. Fundamentals of Engineering Numerical Analysis.</li>
-		</ul>
-		
-		<li><b>Additional</b></li>
-		<ul>
-			<li>Dahlquist, G. and Bjorck, A. Numerical Methods.</li>
-		</ul>
-	</ul>
+<!-- Footer -->
+  <footer>
+    <div>
+      <strong>Office:</strong><br />
+      Room No. 1212-A, FD-I <br />
+      Department of Civil Engineering<br />
+      Birla Institute of Technology and Science, Pilani<br />
+      Pilani, Rajasthan 333031, India
+    </div>
 
-	<h1>Grading</h1>
-	<ul>
-		<li>Quiz: 15% (5% x 3)</li>
-		<li>Minor: 20%</li>
-		<li>Major: 30%</li>
-		<li>Programming assignments: 35% (5% x Top 7)</li>
-	</ul>
-	If a student decides to audit the course, the passing grade will be 40%.
-	Additionally, the student must write minor and major exams, and the attendance 
-	must be greater than or equal to 75% in lectures and tutorials separately.
+ <!-- Center: BITS Logo -->
+      <div class="col-md-4 mb-2 mb-md-0 text-center">
+        <img src="../pics/BITS_Pilani-Logo.png" alt="BITS Pilani Logo" style="height: 90px;" />
+      </div>
+    <div>
+      <strong>Contact:</strong><br />
+      Email: rushdie@pilani.bits-pilani.ac.in<br />
+      Phone: +91-1596-255872
+    </div>
+  </footer>
 
-	<h1>Quizzes, minor and major</h1>
-	<ul>
-		<li>
-			Three quizzes will be conducted; one (quiz #1) before and other two (quiz #2) after the minor exam.
-			Exact date, time and place will be notified later.
-		</li>
-		<li>
-			Minor and major exams will be scheduled based on the institute timetable.
-		</li>
-	</ul>
-
-	<h1>Homework</h1>
-	<ul>
-		<li>
-			Homework will be assigned almost every week. These will not be graded. 
-			Hence, submission is not necessary.
-		</li>
-		<li>
-			Students are strongly encouraged to try the homework problems.
-		</li>
-	</ul>
-
-	<h1>Attendance</h1>
-	<ul>
-		<li>
-			Students are strongly encouraged to attend all the lectures sessions. 
-			Attendance will be recorded for each lecture session. If a student's 
-			attendance is less than 75%, the student will be awarded one grade less than the actual 
-			grade that he/she has earned. For example, a student who has got an A grade but has 
-			attendance less than 75% will be awarded an A (-) grade. However, please note that 
-			there are no marks for attendance.
-		</li>
-
-		<li>
-			In case of absence due to unforeseen circumstances, 
-			such as medical reasons, the student must inform the instructor 
-			via email within a week from the date of absence.
-		</li>
-
-		<li>
-			If a student cannot appear for an exam due to medical reasons, 
-			a medical certificate needs to be 
-			produced from IIT Delhi hospital for consideration of time 
-			extension or re-exam.
-		</li>
-	</ul>
-
-	
-	
-	<!--content area end--->
-	
-	</TD></TR></TABLE>
-	
-	
-	
-	</BODY></HTML>
-	
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
