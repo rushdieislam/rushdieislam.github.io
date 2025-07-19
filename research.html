@@ -1,122 +1,150 @@
-<HTML><HEAD><TITLE>Untitled Document</TITLE>
-<STYLE type=text/css>BODY {
-	FONT-SIZE: 16pt; COLOR: #000000; FONT-FAMILY: verdana,arial,helvetica,geneva
-}
-TABLE {
-	FONT-SIZE: 16pt; COLOR: #000000; FONT-FAMILY: verdana,arial,helvetica,geneva
-}
-A.menuclass {
-	COLOR: #fffff; TEXT-DECORATION: none
-}
-A.menuclass:visited {
-	COLOR: #fffff
-}
-A.menuclass:hover {
-	COLOR: #ff6600; BACKGROUND-COLOR: #CCCC99
-}
-A.dblue {
-	COLOR: #333366; TEXT-DECORATION: none
-}
-A.dblue:visited {
-	COLOR: #333366
-}
-A.dblue:hover {
-	COLOR: #ffffff; BACKGROUND-COLOR: #CCCC99
-}
-A.dwhite {
-	COLOR: #ffffff; TEXT-DECORATION: none
-}
-A.dwhite:visited {
-	COLOR: #ffffff
-}
-A.dwhite:hover {
-	COLOR: #ffffff; BACKGROUND-COLOR: #CCCC99
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research Areas</title>
+  <style>
+    body {
+      font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+      font-size: 16pt;
+      color: #000;
+      background-color: #fff;
+      margin: 40px;
+    }
 
-.single-article .article-container-inner {
-    background: #f0eded;
-    border: 1px solid #c9c7c7;
-    margin-bottom: 20px;
-}
-.single-article hr {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #c9c7c7;
-    width:100%
-}
+    h2, h3 {
+      color: #1f3f5b;
+    }
 
-</STYLE>
+    .collapsible {
+      background-color: #336699;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      font-size: 20px;
+      margin-top: 10px;
+      border-radius: 6px;
+    }
 
-</HEAD>
-<BODY vLink=#ff0000 aLink=#000000 link=#ff0000 bgColor=#ffffff >
+    .active, .collapsible:hover {
+      background-color: #274b72;
+    }
 
-<TABLE cellpadding=2 cellspacing=2 width=98% align=center border=0>
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+      border-radius: 6px;
+    }
 
-<P style="margin-left: 40px"><b> <u>Current Research Areas</u></b><!--example-->
-<ul>
-<li> Fracture Mechanics
-<li> Computational Damage Mechanics
-<li> Dynamic Fracture and Explosion using Meshfree Methods
-<li> Behaviour of Composite Structures under Extreme Loading
-<li> Molecular Dynamics
-<li> Multiscale Modelling
-<li> Fluid Structure Interaction
-</ul>
+    .research-text {
+      max-width: 900px;
+      padding: 20px;
+      text-align: justify;
+    }
 
-<!---heading------>
-<TR><TD valign=top><P style="margin-left: 40px"><font face=verdana size=6 color=#336699><b>Research Highlights</b></font></TD></TR>
-<!---heading end------------------------>
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      border-radius: 6px;
+    }
 
-<TR><TD valign=top><hr size=-1 color=#336699></font></TD></TR>
+    .paper-list {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
 
-<TR><TD valign=top><!--contents area---------------->
+    .paper-list li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
 
-<p><img style="float: right; width:900px;height:500px; padding-right: 100px;" src="pics/research/fracture.png" align="top" border="0"></P>
-<p><b><u><font size="5">Development of particle-based frameworks for high strain rate loading</font></u></b></br></p>
-<p align="justify" style="float:right; width: 900px; padding-right: 100px;"><b> Figure: Failure in metallic and ceramic plates due to projectile impact</b></p>
-<p style="width:600px" align="justify"> An SPH-based computational framework is developed for studying the deformation and failure behaviour of brittle, ductile and composite armours under impact loading. Crack propagation is modelled through a pseudo-spring analogy wherein the interacting particles are assumed to be connected through pseudo springs, and the interaction is continuously modified through an order-parameter based on the accumulated damage in the spring. At the onset of crack formation, i.e., when the accrued damage reaches the critical value, the spring breaks which results in termination of interaction between particles on either side of the spring. A key feature of the computational model is that it can capture arbitrary propagating cracks without introducing any special treatment such as discontinuous enrichment, particle-splitting, etc. This computational framework is used herein to study adiabatic shear plugging in metal plates when modelling penetration under impact loading by a flat-ended, cylindrical projectile; different failure modes in metal plates under impact by sharp-nosed projectiles; arbitrarily oriented cracks, fragmentation and conoid formation of ceramics, etc. Computed results are compared with the experimental observation given in the literature, and the efficacy of the framework is demonstrated. </br></p>
+  <h2><u>Current Research Areas</u></h2>
+  <ul>
+    <li>Fracture Mechanics</li>
+    <li>Computational Damage Mechanics</li>
+    <li>Dynamic Fracture and Explosion using Meshfree Methods</li>
+    <li>Behaviour of Composite Structures under Extreme Loading</li>
+    <li>Molecular Dynamics</li>
+    <li>Multiscale Modelling</li>
+    <li>Fluid Structure Interaction</li>
+  </ul>
 
-<p style="width:600px;">Relevant Papers:<ul><li>Islam, M.R.I., Chakraborty, S., Shaw, A. and Reid, S., "A Computational Model for Failure of Ductile Material Under Impact", <b>International Journal of Impact Engineering</b>, 108, 334-347, 2017
-<a href="https://doi.org/10.1016/j.ijimpeng.2017.04.005"><font color="#0000FF">(doi.org/10.1016/j.ijimpeng.2017.04.005)</font></a>.
-<li>Chakraborty, S., Islam, M.R.I., Shaw, A. Ramachandra L.S. and Reid, S.R., "A Computational Framework for Modelling Impact Induced Damage in Ceramic and Ceramic-Metal Composite Structures", <b>Composite Structures</b>, 164, 263-276, 2017
-<a href="https://doi.org/10.1016/j.compstruct.2016.12.064"><font color="#0000FF">(doi.org/10.1016/j.compstruct.2016.12.064)</font></a>.</p></ul>
+  <button class="collapsible">Focus Area #1: Crack Modelling via SPH</button>
+  <div class="content">
+    <div class="research-text">
+      <p>This focus area develops a Smoothed Particle Hydrodynamics (SPH)–based computational framework to study crack initiation and propagation in ductile, brittle, and composite materials under high-velocity impact. Cracks evolve using a pseudo-spring analogy that links SPH particles; these springs weaken and break based on damage accumulation, allowing cracks to form and propagate dynamically without artificial enrichment or particle-splitting. The framework effectively captures shear plugging, fragmentation, and conoid fracture patterns in impacted plates, and its predictions show strong agreement with experimental observations.</p>
 
-<hr>
-<!--next problem-->
+      <img src="pics/research/fracture.png" alt="Fracture Research Image">
+      <p><b>Figure:</b> Failure in metallic and ceramic plates due to projectile impact</p>
 
-<p><img style="float: right; width:900px;height:500px; padding-right: 100px; " src="pics/research/graphene.png" border="0"></P>
-<p align="justify" style="float:right; width: 900px; padding-right: 100px;"><b> Figure: Multigrained graphene sheets, the setup for evaluating the elastic modulus, the post-damage behaviour, and the failure strain, the stress-strain behaviour in a single-grained graphene sheet and the crack propagation in different notch orientation.</b></p>
-<p><b><u><font size="5">Multiscale modelling with molecular dynamics and smoothed particle hydrodynamics</font></u></b></p>
-<p style="width:600px;" align="justify">Most of the continuum scale processes, such as fracture, plasticity, etc., trace their origin to atomistic scale phenomena. To gain deeper insights into these processes, one needs to understand the behaviour of materials through the lens of multiscale methods. We study the problem of fracture crack propagation in different materials through a sequential multiscaling technique. The continuum-mechanical smoothed particle hydrodynamics (SPH) is coupled with the atomistic scale molecular dynamics (MD) simulations through proper constitutive modelling - the non-linear material properties and the mechanical equation of state which serve as the inputs to the SPH model are evaluated directly from the MD simulations. Such handshaking ensures that the continuum-scale SPH model is able to faithfully reproduce the atomistic scale stress-strain behaviour until failure. </br></p>
+      <p>Relevant Papers:</p>
+      <ul class="paper-list">
+        <li>Islam, M.R.I., Chakraborty, S., Shaw, A. and Reid, S., "A Computational Model for Failure of Ductile Material Under Impact", <b>International Journal of Impact Engineering</b>, 108, 334-347, 2017. <a href="https://doi.org/10.1016/j.ijimpeng.2017.04.005">(doi.org/10.1016/j.ijimpeng.2017.04.005)</a></li>
+        <li>Chakraborty, S., Islam, M.R.I., Shaw, A. Ramachandra L.S. and Reid, S.R., "A Computational Framework for Modelling Impact Induced Damage in Ceramic and Ceramic-Metal Composite Structures", <b>Composite Structures</b>, 164, 263-276, 2017. <a href="https://doi.org/10.1016/j.compstruct.2016.12.064">(doi.org/10.1016/j.compstruct.2016.12.064)</a></li>
+      </ul>
+    </div>
+  </div>
 
-<p style="width:600px;">Relevant Papers:<ul><li>Islam, M.R.I., Ganesh, K.V. and Patra, P.K., "On the Equivalence of Eulerian Smoothed Particle Hydrodynamics, Total Lagrangian Smoothed Particle Hydrodynamics and Molecular Dynamics Simulations for Solids", <b>Computer Methods in Applied Mechanics and Engineering</b>, 391, 114591, 2022
-<a href="https://doi.org/10.1016/j.cma.2022.114591"><font color="#0000FF">(doi.org/10.1016/j.cma.2022.114591)</font></a>.
-<li>Bhattacharyya, S., Islam, M.R.I. and Patra, P.K., "Multiscale modelling of fracture in graphene sheets", <b>Theoretical and Applied Fracture Mechanics</b>, 122, 103617, 2022
-<a href="https://doi.org/10.1016/j.tafmec.2022.103617"><font color="#0000FF">(doi.org/10.1016/j.tafmec.2022.103617)</font></a>.</p></ul>
+  <button class="collapsible">Focus Area #2: Multi-scale Modelling</button>
+  <div class="content">
+    <div class="research-text">
+      <p>This research focuses on bridging atomistic and continuum scales to understand fracture and plasticity from a fundamental perspective. A sequential multiscale method couples molecular dynamics (MD) simulations with SPH to accurately simulate material behaviour under stress. MD provides the nonlinear stress-strain response and equation of state, which are directly embedded into the SPH solver. This ensures that continuum-scale predictions retain fidelity to atomic-level mechanisms, particularly for materials like graphene under various notch orientations and loading conditions.</p>
 
-<hr>
-<!--next problem-->
+      <img src="pics/research/graphene.png" alt="Graphene Research Image">
+      <p><b>Figure:</b> Multigrained graphene sheets, stress-strain response, and crack propagation in different notch orientations.</p>
 
-<p><img style="float: right; width:900px;height:500px; padding-right: 100px; " src="pics/research/fsi.png" border="0"></P>
-<p align="justify" style="float:right; width: 900px; padding-right: 100px;"><b> Figure: Deformation of elastic structures under hydrodynamic loading.</b></p>
-<p><b><u><font size="5">Fluid-structure interaction problems with finite deformation and fracturing</font></u></b></p>
-<p style="width:600px;" align="justify">Understanding crack propagation in structures subjected to fluid loads is crucial in various engineering applications, ranging from underwater pipelines to aircraft components. In this work, a computational framework is proposed to investigate the dynamic response of structures, including their damage and fracture behaviour under hydrodynamic load. The proposed framework employs weakly compressible smoothed particle hydrodynamics (SPH) to model the fluid flow and a pseudo-spring-based SPH solver for modelling the structural response. The \delta-SPH technique is implemented to enhance pressure calculations within the fluid phase. The pseudo-spring analogy is employed for modelling damage, where particle interactions are confined to their immediate neighbours. These particles are linked by springs, which do not contribute to system stiffness but determine the interaction strength between connected pairs. It is assumed that a crack propagates through a spring connecting a particle pair when the damage indicator of that spring exceeds a predefined threshold. The proposed framework is extensively validated through existing experimental and numerical data from the literature. The ability of the framework to accurately depict large material deformation, damage and fracture behaviour under hydrodynamic loads is showcased through a few numerical simulations. </br></p>
-<li>Islam, M.R.I., "SPH-based framework for modelling fluid-structure interaction problems with finite deformation and fracturing", <b>Ocean Engineering</b>, 294, 116722, 2024
-<a href="https://doi.org/10.1016/j.oceaneng.2024.116722"><font color="#0000FF">(doi.org/10.1016/j.oceaneng.2024.116722)</font></a>.</p></ul>
+      <p>Relevant Papers:</p>
+      <ul class="paper-list">
+        <li>Islam, M.R.I., Ganesh, K.V. and Patra, P.K., "On the Equivalence of Eulerian Smoothed Particle Hydrodynamics, Total Lagrangian Smoothed Particle Hydrodynamics and Molecular Dynamics Simulations for Solids", <b>Computer Methods in Applied Mechanics and Engineering</b>, 391, 114591, 2022. <a href="https://doi.org/10.1016/j.cma.2022.114591">(doi.org/10.1016/j.cma.2022.114591)</a></li>
+        <li>Bhattacharyya, S., Islam, M.R.I. and Patra, P.K., "Multiscale modelling of fracture in graphene sheets", <b>Theoretical and Applied Fracture Mechanics</b>, 122, 103617, 2022. <a href="https://doi.org/10.1016/j.tafmec.2022.103617">(doi.org/10.1016/j.tafmec.2022.103617)</a></li>
+      </ul>
+    </div>
+  </div>
 
-<!--copy and paste for add more-->
+  <button class="collapsible">Focus Area #3: Fluid-Structure Interaction</button>
+  <div class="content">
+    <div class="research-text">
+      <p>This area addresses the dynamic interaction between deformable structures and fluid forces, particularly under high-speed or underwater conditions. A fully coupled SPH framework models both fluid and structural phases—fluid using weakly compressible SPH and solids using a pseudo-spring SPH model. The δ-SPH formulation improves pressure accuracy, while fracture in the solid phase is handled via spring failure based on a threshold damage indicator. The framework effectively simulates large deformations, crack propagation, and fracture dynamics, with validation against benchmark experiments.</p>
+
+      <img src="pics/research/fsi.png" alt="FSI Research Image">
+      <p><b>Figure:</b> Deformation of elastic structures under hydrodynamic loading.</p>
+
+      <p>Relevant Paper:</p>
+      <ul class="paper-list">
+        <li>Islam, M.R.I., "SPH-based framework for modelling fluid-structure interaction problems with finite deformation and fracturing", <b>Ocean Engineering</b>, 294, 116722, 2024. <a href="https://doi.org/10.1016/j.oceaneng.2024.116722">(doi.org/10.1016/j.oceaneng.2024.116722)</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
 
 
 
-
-        
-
-
-<!--content area end--->
-
-</TD></TR></TABLE>
-
-
-
-</BODY></HTML>
